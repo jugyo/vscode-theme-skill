@@ -6,8 +6,8 @@ A Claude Code Skill that generates VSCode Color Themes and handles packaging and
 
 The following tools are required:
 
-- [Node.js](https://nodejs.org/)
-- [@vscode/vsce](https://github.com/microsoft/vscode-vsce) - `npm install -g @vscode/vsce`
+- Node.js
+- @vscode/vsce - `npm install -g @vscode/vsce`
 - `code` CLI command - In VSCode: `Cmd+Shift+P` → "Shell Command: Install 'code' command in PATH"
 
 ## Installation
