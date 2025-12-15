@@ -82,7 +82,35 @@ Note: Set `"uiTheme": "vs"` for light themes.
 
 ### Step 4: Create the color theme file
 
-Create `/tmp/<theme-id>/themes/<theme-id>-color-theme.json`:
+Create `/tmp/<theme-id>/themes/<theme-id>-color-theme.json`.
+
+The theme file has two main sections:
+- **colors**: UI elements (editor, sidebar, tabs, etc.)
+- **tokenColors**: Syntax highlighting (code tokens)
+
+#### Essential UI colors to customize:
+
+| Property | Description |
+|----------|-------------|
+| `editor.background` | Main editor background |
+| `editor.foreground` | Default text color |
+| `activityBar.background` | Left sidebar icon bar |
+| `sideBar.background` | File explorer background |
+| `statusBar.background` | Bottom status bar |
+| `titleBar.activeBackground` | Window title bar |
+
+#### Essential token scopes:
+
+| Scope | Applies to |
+|-------|-----------|
+| `comment` | Comments |
+| `string` | String literals |
+| `keyword` | `if`, `for`, `const`, etc. |
+| `entity.name.function` | Function names |
+| `entity.name.type` | Type/class names |
+| `variable` | Variables |
+
+Example:
 
 ```json
 {
@@ -289,17 +317,9 @@ Example light theme colors:
 ```
 
 ### Accessibility
-- Maintain contrast ratio of 4.5:1 or higher for text
-- Test with colorblind simulation tools
+- Aim for reasonable contrast between text and background for readability
 
 ## Troubleshooting
 
-### `code` command not found
-In VSCode: `Cmd+Shift+P` → `Shell Command: Install 'code' command in PATH`
-
 ### Theme not appearing
-1. Restart VSCode
-2. Run `Developer: Reload Window`
-
-### Package error
-Ensure `publisher` field exists in `package.json`
+Run `Developer: Reload Window` from command palette
