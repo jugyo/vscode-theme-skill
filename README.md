@@ -12,20 +12,14 @@ The following tools are required:
 
 ## Installation
 
-**Direct Plugin Installation (Recommended):**
-```
-/plugin install jugyo/vscode-theme-skill
-```
-
-**Manual Setup:**
-1. Clone the repository
-2. Copy the skill folder to `~/.claude/skills/`
-3. Reload Claude Code for automatic activation
+Clone and copy the skill to your Claude Code skills directory:
 
 ```bash
 git clone https://github.com/jugyo/vscode-theme-skill.git
 cp -r vscode-theme-skill/skills/vscode-theme ~/.claude/skills/
 ```
+
+Reload Claude Code for automatic activation.
 
 ## Usage
 
