@@ -316,6 +316,60 @@ Example light theme colors:
 }
 ```
 
+### Transparency
+Use alpha channel for subtle effects: `#ffffff40` (last two digits = opacity 00-ff)
+
+### Semantic highlighting
+Enable for more accurate syntax colors based on language server analysis:
+```json
+{
+  "semanticHighlighting": true
+}
+```
+
+### Commonly overlooked UI elements
+- `editorError.foreground` / `editorWarning.foreground` - Error/warning underlines
+- `gitDecoration.*` - Git file status colors in explorer
+- `minimap.*` - Minimap colors
+- `scrollbarSlider.*` - Scrollbar appearance
+- `editorGutter.*` - Gutter area (left of line numbers)
+
+### Terminal ANSI colors
+Set all 16 ANSI colors for consistent terminal appearance:
+```json
+{
+  "terminal.ansiBlack": "#1a1a2e",
+  "terminal.ansiRed": "#e06c75",
+  "terminal.ansiGreen": "#98c379",
+  "terminal.ansiYellow": "#e5c07b",
+  "terminal.ansiBlue": "#61afef",
+  "terminal.ansiMagenta": "#c678dd",
+  "terminal.ansiCyan": "#56b6c2",
+  "terminal.ansiWhite": "#abb2bf",
+  "terminal.ansiBrightBlack": "#5c6370",
+  "terminal.ansiBrightRed": "#e06c75",
+  "terminal.ansiBrightGreen": "#98c379",
+  "terminal.ansiBrightYellow": "#e5c07b",
+  "terminal.ansiBrightBlue": "#61afef",
+  "terminal.ansiBrightMagenta": "#c678dd",
+  "terminal.ansiBrightCyan": "#56b6c2",
+  "terminal.ansiBrightWhite": "#ffffff"
+}
+```
+
+### Bracket pair colorization
+Customize bracket pair colors (VSCode uses these by default):
+```json
+{
+  "editorBracketHighlight.foreground1": "#ffd700",
+  "editorBracketHighlight.foreground2": "#da70d6",
+  "editorBracketHighlight.foreground3": "#179fff",
+  "editorBracketHighlight.foreground4": "#ffd700",
+  "editorBracketHighlight.foreground5": "#da70d6",
+  "editorBracketHighlight.foreground6": "#179fff"
+}
+```
+
 ### Accessibility
 - Aim for reasonable contrast between text and background for readability
 
