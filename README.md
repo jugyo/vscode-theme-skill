@@ -54,8 +54,7 @@ After theme generation, you can provide feedback to adjust:
 
 ```
 vscode-theme-skill/
-├── .claude-plugin/
-│   └── plugin.json
+├── LICENSE
 ├── README.md
 └── skills/
     └── vscode-theme/
