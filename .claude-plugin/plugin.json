@@ -1,8 +1,0 @@
-{
-  "name": "vscode-theme",
-  "description": "Generate VSCode color themes, package them as .vsix files, and install to VSCode",
-  "version": "1.0.0",
-  "author": {
-    "name": "jugyo"
-  }
-}
