@@ -222,24 +222,22 @@ code --install-extension /tmp/<theme-id>/<theme-id>-0.0.1.vsix
 
 **For theme updates (IMPORTANT):**
 
-When updating an existing theme, you must uninstall the old version first, then reinstall:
+When updating an existing theme, always increment the version in `package.json` before packaging:
 
 ```bash
-cd /tmp/<theme-id>
-vsce package
-code --uninstall-extension custom.<theme-id>
-code --install-extension /tmp/<theme-id>/<theme-id>-0.0.1.vsix
-```
-
-The extension ID format is `<publisher>.<theme-id>` (e.g., `custom.ocean-blue-theme`).
-
-Alternatively, bump the version in `package.json` before packaging:
-```bash
-# Update version in package.json (e.g., 0.0.1 -> 0.0.2)
+# 1. Update version in package.json (e.g., 0.0.1 -> 0.0.2)
+# 2. Package and install
 cd /tmp/<theme-id>
 vsce package
 code --install-extension /tmp/<theme-id>/<theme-id>-<new-version>.vsix
 ```
+
+Version increment guidelines:
+- Patch version (0.0.X): Minor color tweaks, bug fixes
+- Minor version (0.X.0): New token colors, significant UI changes
+- Major version (X.0.0): Complete theme redesign
+
+This approach ensures VSCode properly updates the theme without needing to uninstall first.
 
 ### Step 6: Notify user
 
